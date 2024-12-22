@@ -3,8 +3,8 @@
 import { useState } from 'react'
 import { format } from 'date-fns'
 import { CalendarIcon } from 'lucide-react'
-import { calculateTimeStats } from '../utils/calculateTimeStats'
-import { WeekGrid } from '../components/week-grid'
+import { calculateTimeStats } from '@/utils/calculateTimeStats'
+import { WeekGrid } from '@/components/week-grid'
 import { Button } from '@/components/ui/button'
 import { Calendar } from '@/components/ui/calendar'
 import { Checkbox } from '@/components/ui/checkbox'
@@ -48,7 +48,7 @@ export default function CarpeDiem() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-purple-400 to-pink-500 flex items-center justify-center p-4">
+    <div className="flex items-center justify-center p-4">
       <Card className="w-full max-w-4xl">
         <CardHeader>
           <CardTitle className="text-2xl font-bold text-center">Carpe Diem</CardTitle>
